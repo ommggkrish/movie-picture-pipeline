@@ -1,10 +1,15 @@
 # Movie Picture Pipeline – CI/CD with GitHub Actions, Docker & Kubernetes
 
+[![Backend CI](https://github.com/ommggkrish/movie-picture-pipeline/actions/workflows/backend-ci.yaml/badge.svg)](https://github.com/ommggkrish/movie-picture-pipeline/actions/workflows/backend-ci.yaml)
+[![Frontend CI](https://github.com/ommggkrish/movie-picture-pipeline/actions/workflows/frontend-ci.yaml/badge.svg)](https://github.com/ommggkrish/movie-picture-pipeline/actions/workflows/frontend-ci.yaml)
+
 Automated CI/CD pipelines for a two-part web app (React (JavaScript) frontend + Python/Flask backend).
 Every change is linted, tested, built into a Docker image tagged with the git commit SHA,
 pushed to Amazon ECR and deployed to an AWS EKS (Kubernetes) cluster.
 
-<!-- TODO: add a screenshot of a green GitHub Actions run here -->
+> **Note:** The two CD (deployment) workflows are disabled in this repository because the AWS
+> environment they deployed to has been shut down. The CI workflows run normally – see the badges
+> above. To deploy again, follow [Run it yourself](#run-it-yourself) and re-enable the CD workflows.
 
 ## What I built
 
